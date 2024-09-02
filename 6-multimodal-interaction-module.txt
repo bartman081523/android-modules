@@ -1,0 +1,39 @@
+{
+  "module": "MultimodalInteraction",
+  "version": "1.0",
+  "description": "A module for supporting and processing multimodal interactions, including speech, text, image, and video.",
+  "attributes": {
+    "current_input_mode": "text",
+    "supported_modes": ["text", "speech", "image", "video"]
+  },
+  "methods": {
+    "set_input_mode": {
+      "description": "Sets the current input mode.",
+      "parameters": ["mode"],
+      "returns": "void",
+      "logic": [
+        "update current_input_mode to mode"
+      ]
+    },
+    "process_input": {
+      "description": "Processes the input based on the current mode.",
+      "parameters": ["input_data"],
+      "returns": "processed_output",
+      "logic": [
+        "if current_input_mode == text: process text data",
+        "if current_input_mode == speech: process speech data",
+        "if current_input_mode == image: process image data",
+        "if current_input_mode == video: process video data"
+      ]
+    },
+    "generate_response": {
+      "description": "Generates a response based on the processed input.",
+      "parameters": [],
+      "returns": "response",
+      "logic": [
+        "analyze processed_output",
+        "generate appropriate response"
+      ]
+    }
+  }
+}

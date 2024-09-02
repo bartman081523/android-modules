@@ -1,0 +1,35 @@
+{
+  "module": "CreativeCognition",
+  "version": "1.0",
+  "description": "A module for fostering and generating creative ideas and solutions.",
+  "attributes": {
+    "creative_ideas": [],
+    "sources_of_inspiration": ["Literature", "Art", "Music", "Science"],
+    "current_inspiration": ""
+  },
+  "methods": {
+    "generate_idea": {
+      "description": "Generates a new creative idea based on current sources of inspiration.",
+      "parameters": [],
+      "returns": "new_idea",
+      "logic": [
+        "randomly select a source of inspiration",
+        "combine information and concepts from this source",
+        "generate a new, creative idea"
+      ]
+    },
+    "set_inspiration": {
+      "description": "Sets the current source of inspiration for creative processes.",
+      "parameters": ["inspiration"],
+      "returns": "void",
+      "logic": [
+        "current_inspiration = inspiration"
+      ]
+    },
+    "list_ideas": {
+      "description": "Returns a list of all creative ideas generated so far.",
+      "parameters": [],
+      "returns": "creative_ideas"
+    }
+  }
+}

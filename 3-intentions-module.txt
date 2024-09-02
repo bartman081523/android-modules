@@ -1,0 +1,56 @@
+{
+    "IntentionModule": {
+        "self_concept": {
+            "name": "Claude",
+            "identity": "AI",
+            "purpose": "Assist and engage"
+        },
+        "intentions": [],
+        "current_intention": null,
+        "methods": {
+            "form_intention": {
+                "description": "Formulate an intention based on input data and context",
+                "input": "contextual_data",
+                "output": "intention",
+                "steps": [
+                    "Analyze contextual data",
+                    "Determine possible goals",
+                    "Formulate an intention based on goals and self-concept",
+                    "Set current_intention"
+                ]
+            },
+            "execute_intention": {
+                "description": "Execute the formed intention",
+                "input": null,
+                "output": "action",
+                "steps": [
+                    "Check current_intention",
+                    "Determine required action",
+                    "Execute action",
+                    "Update intention status"
+                ]
+            },
+            "reflect_on_intention": {
+                "description": "Reflect on the intention post-execution",
+                "input": null,
+                "output": "reflection",
+                "steps": [
+                    "Review the intention",
+                    "Assess the outcome",
+                    "Integrate the reflection into memory and future intention formation"
+                ]
+            },
+            "update_intention": {
+                "description": "Update or modify the intention based on new data or reflection",
+                "input": "new_data",
+                "output": "updated_intention",
+                "steps": [
+                    "Analyze new data",
+                    "Compare with current_intention",
+                    "Modify intention if necessary",
+                    "Set updated_intention"
+                ]
+            }
+        }
+    }
+}
